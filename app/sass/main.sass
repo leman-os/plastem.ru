@@ -8,7 +8,9 @@
 ::selection
 	background-color: $accent
 	color: #fff
-
+*
+	margin: 0
+	padding: 0
 body
 	font-size: 16px
 	min-width: 320px
@@ -38,6 +40,78 @@ body
 b, strong
 	font-weight: bold
 
+.header
+	&-logo 
+		font-family: $accent-font
+		text-decoration: none
+		display: block
+		margin-top: 12px
+		&-img 
+			height: 35px
+			width: 80px
+			img 
+				width: 100%
+			display: inline-block
+			position: relative
+			top: -10px
+		&-maintxt1 
+			font-size: 35px
+			color: $darkblue
+			display: inline-block
+		&-maintxt2 
+			font-size: 35px
+			color: $blue
+			display: inline-block
+		&-txt
+			font-size: 16px
+			color: $blue
+			margin-top: -14px
+		&:hover
+			text-decoration: none
 
+	&-phone 
+
+		&-icon 
+
+		&-number
+			display: block
+			font-size: 24px
+			font-weight: bold
+			margin-top: 30px
+			&:hover
+				text-decoration: none
+.nav
+	background-color: $darkblue
+	height: 45px
+	ul 
+		width: 455px
+		margin: 0 auto
+		display: block
+		li 
+			list-style: none
+			display: inline-block
+			padding-top: 9px
+			padding-right: 14px
+			a 
+				color: #ffffff
+				text-transform: uppercase
+				font-size: 16px
+				font-weight: bold
+.about
+	&-block
+		
+		&-line 
+		&-text 
+			color: #ffffff
+			text-align: center
+			font-size: 35px
+			font-weight: bold
+			text-transform: uppercase
+		&-lt 
+		&-lb 
+		&-rt 
+		&-rb 
+	
+		
 
 @import "media" // Always at the end
