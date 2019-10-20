@@ -148,6 +148,8 @@ b, strong
 		text-align: center
 		font-size: 24px
 		margin: 40px 0;
+	img 
+		width: 100%
 .sendred
 	background-color: $red
 	padding-top: 40px
@@ -294,6 +296,13 @@ b, strong
 		text-align: center
 		color: $darkblue
 		margin: 40px
+	table 
+		width: 100%
+		text-align: center
+		tr 
+			td 
+				border: solid 1px
+				padding: 5px
 .cont 
 	h2 
 		font-size: 24px 
@@ -319,8 +328,18 @@ b, strong
 
 .footer
 	background-color: $darkblue
+	padding: 40px 0 15px 0
+	p 
+		text-align: center
+		color: #ffffff
 	&-logo
 		@extend .header-logo
+		margin-top: 0
+		position: relative
+		img 
+			top: -13px
+			display: inline-block
+			position: relative
 	&-logotxt
 		@extend .header-logo-maintxt1
 		color: #ffffff
@@ -328,8 +347,20 @@ b, strong
 		@extend .header-logo-txt
 		color: #ffffff
 	&-phone
+		float: right
+		position: relative
 		&-icon 
+			color: #ffffff
+			position: absolute
+			font-size: 35px
+			top: -9px
+			left: -40px
 		&-number
+			color: #ffffff
+			font-size: 24px
+			&:hover 
+				color: #ffffff
+				text-decoration: none
 .widthsend
 	height: 300px
 	margin-top: -13px
