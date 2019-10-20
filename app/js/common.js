@@ -2,6 +2,8 @@ $(function() {
     
     $(".sendformbut").click(function() {
         var myform = $(this).closest("form"); //parent form
+        // var phone = myform.$(".name").val();
+        // if (phone != ""){
         $.ajax({
                type: "POST",
                url: "formsendmail.php",
@@ -11,7 +13,8 @@ $(function() {
                 myform.html(data);
                }
              });
-    
+            
         return false; // avoid to execute the actual submit of the form.
+        // }
      });
 });
