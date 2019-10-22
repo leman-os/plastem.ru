@@ -18,7 +18,7 @@
     .widthsend 
         height: 342px
     .cont-block 
-        position: sticky
+        position: unset
         width: auto
     .sendred-form-input 
         margin: 0
@@ -42,6 +42,13 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+    .nav
+        height: 148px
+    .header-phone 
+        margin-left: 42px
+        float: left
+    .header-phone-icon
+        display: inline
     .sendblue 
         display: none
     .sendred 
@@ -52,11 +59,14 @@
         ul
             li 
                 display: block
+    .cont-block 
+        height: 248px
     .tech 
         table 
             font-size: 12px
-    .header-phone-icon 
-        display: none
+    .sendred-form-input 
+        margin-top: 20px
+    
 
 
 /*==========  Mobile First  ==========*/
@@ -73,4 +83,8 @@
 
 // ≤1200px
 +media-breakpoint-up(xl)
+    .sendred-rect-left
+        display: none
+    .sendred-rect-right 
+        display: none
 
